@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Rubik:ital@1&display=swap');
+body{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Rubik', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ddd9;
+}
+.annonce{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Rubik', sans-serif;
+    background-color: #000;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    
+}
+.annonce p{
+    color: aliceblue;
+    text-align: center;
+    
+    
+}
+/* Barre de navigation*/
+nav{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #fff;
+    position: inherit;
+    top: 0;
+    border-bottom: 2px solid #9a9aa5;
+   
+    
+}
+.onglets .link:hover{
+    transform: scale(1.1);
+    color: rgb(106, 226, 154);
+    transition: 0.3s;
+    translate: 1px;
+}
+nav h1{
+    font-size: 20px;
+}
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+nav .onglets p{
+    font-size: 16px;
+    margin: 40px 20px 20px 10px ;
+    border:none;
+    border-radius: 3px;
+    
+    cursor: pointer;
+}
+nav .onglets input{
+    margin: 8px 20px;
+    padding:15px ;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+}
+/*fin de la Barre de navigation*/
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+header h1{
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+}
+header button{
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor:pointer;
+
+}
+/* Fin de Header */
+/* Section principales*/
+.main{
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Toutes les cartes */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .card{
+    margin-right: 20px;
+    cursor: pointer;
+    
+    
+    
+}
+
+.cards .card img{
+    width: 265px;
+    margin: 5px;
+    
+
+}
+.cards  .card:hover{
+    transform: scale(1.01);
+    padding: 3px;
+    border: 1px solid rgba(137, 228, 228, 0.5);
+    border-radius: 5%;
+    transition: 0.3s;
+    translate: 1px;
+    
+    
+}
+
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.cards .card .card-body p{
+    margin-top: -10px;
+    display: inline-flex;
+}
+.cards .card .card-body button{
+    color: rgb(241, 100, 218);
+    border: none;
+}
+/*  Fin des cartess */
+/* video de presentation*/
+.main .video{
+    margin-top: 80px;
+    width: 90%;
+}
+.main .video iframe{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+    box-shadow: #48484d;
+}
+.img img{
+    
+    margin-left: 120px;
+    border-image-outset: solid 2px #f9f9;
+}
+/* Fin de la video de presentation*/
+.conseil,text{
+    align-items: center;
+    text-align: center;
+    background-color:#f2f2f2;
+    width: 90%;
+    justify-content: center;
+    margin-left: 70px;
+}
+.conseil h1,.text h1{
+    padding: 10px;
+    color: rgb(22, 228, 114);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.conseil p, .text p{
+    margin-left: 30px;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    text-align: start;
+    text-shadow: #9a9aa5;
+}
+.side{
+    width: 60%;
+    padding-left: 100px;
+}
+.row{
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+}
+
+.text{
+    
+    text-align: center;
+    width: 80%;
+    margin-left: 117px;
+}
+.text p{
+    text-align: start;
+    margin: 10px;
+    
+}
+/* Fin de la section principales */
+/* Pied de la page*/
+footer{
+    margin-top: 100px;
+    background-color: #000;
+    color: #fff4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    width: 96%;
+
+}
+footer .social-media{
+    display: flex;
+}
+footer .social-media p{
+    margin-right: 15px;
+    border: 1px solid #f2f2f2;
+    border-radius: 100%;
+    padding: 5%;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+/* Fin du pied de page*/
+
+@media screen and (max-width:640px){
+    nav .onglets .link, nav .h1{
+        display: none;
+    }
+    .cards .card img{
+        width: 300px;
+    }
+}
+.main button{
+    transition: all;
+    border-radius: 3px;
+    color: aqua;
+}
